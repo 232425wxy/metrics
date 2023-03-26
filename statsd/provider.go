@@ -56,8 +56,8 @@ func (g *Gauge) With(labelValues ...string) metrics.Gauge {
 }
 
 type Histogram struct {
-	Timing *statsd.Timing
-	namer *namer.Namer
+	Timing         *statsd.Timing
+	namer          *namer.Namer
 	statsdProvider *statsd.Statsd
 }
 
